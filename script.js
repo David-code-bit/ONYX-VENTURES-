@@ -77,27 +77,27 @@ function smoothScroll(event, sectionId) {
 
 var SLIDES = [
   {
-    image:    'images/frame.jpg',
+    image:    'frame.jpg',
     headline: 'Expert Frame Making & Sales',
     sub:      'Beautifully crafted frames for photos, certificates, mirrors and wall décor'
   },
   {
-    image:    'images/arts.jpg',
+    image:    'arts.jpg',
     headline: 'Arts & Entertainment',
     sub:      'Unique art pieces and decorative designs that inspire, engage and bring joy'
   },
   {
-    image:    'images/card.jpg',
+    image:    'card.jpg',
     headline: 'Creative Card Designs',
     sub:      'Innovative designs for homes, offices, events and complementary business cards'
   },
   {
-    image:    'images/tshirt.jpg',
+    image:    'tshirt.jpg',
     headline: 'Custom T-Shirt Printing',
     sub:      'High-quality prints on T-shirts — from birthday pictures to team uniforms'
   },
   {
-    image:    'images/cladding.jpg',
+    image:    'cladding.jpg',
     headline: 'Cladding Solutions',
     sub:      'Premium cladding that enhances and protects any interior or exterior surface'
   }
