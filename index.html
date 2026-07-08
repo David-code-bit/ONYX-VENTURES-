@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Onyx Ventures — Frame Making, Arts & Entertainment, Card Designs, T-Shirt Printing, and Cladding services in Nigeria." />
+  <title>Onyx Ventures</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Skip to main content (accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="site-header">
+    <div class="header-inner">
+      <!-- Logo -->
+      <a href="#home" class="logo-link" aria-label="Onyx Ventures – go to home" onclick="smoothScroll(event,'home')">
+        <img src="images/logo.jpg" alt="Onyx Ventures logo" class="logo-img" />
+      </a>
+
+      <!-- Site title -->
+      <span class="site-title">Onyx Ventures</span>
+
+      <!-- Desktop navigation -->
+      <nav aria-label="Main navigation">
+        <ul class="desktop-nav">
+          <li><a href="#home"     onclick="smoothScroll(event,'home')">Home</a></li>
+          <li><a href="#about"    onclick="smoothScroll(event,'about')">About</a></li>
+          <li><a href="#services" onclick="smoothScroll(event,'services')">Services</a></li>
+          <li><a href="#contact"  onclick="smoothScroll(event,'contact')">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger (mobile only) -->
+      <button
+        id="hamburger"
+        class="hamburger-btn"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        onclick="toggleMenu()"
+      >
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
+      </button>
+    </div>
+
+    <!-- Mobile navigation -->
+    <div id="mobile-menu" class="mobile-nav" role="navigation" aria-label="Mobile navigation" hidden>
+      <ul>
+        <li><a href="#home"     onclick="smoothScroll(event,'home')">Home</a></li>
+        <li><a href="#about"    onclick="smoothScroll(event,'about')">About</a></li>
+        <li><a href="#services" onclick="smoothScroll(event,'services')">Services</a></li>
+        <li><a href="#contact"  onclick="smoothScroll(event,'contact')">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===================== HOME / HERO ===================== -->
+    <section id="home" class="hero" aria-label="Hero slideshow">
+
+      <!-- Background image layer -->
+      <div class="hero-bg" id="hero-bg" aria-hidden="true"></div>
+
+      <!-- Dark overlay -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <!-- Decorative gold bar -->
+      <div class="hero-gold-bar" aria-hidden="true"></div>
+
+      <!-- Slide content -->
+      <div class="hero-content" id="hero-content">
+        <h1 id="slide-headline" class="hero-headline"></h1>
+        <div class="gold-divider" aria-hidden="true"></div>
+        <p  id="slide-sub"      class="hero-sub"></p>
+        <div class="hero-buttons">
+          <button class="btn-gold"    onclick="smoothScroll(event,'services')">Our Services</button>
+          <button class="btn-outline" onclick="smoothScroll(event,'contact')">Contact Us</button>
+        </div>
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+
+      <!-- Slide controls -->
+      <div class="slide-controls" role="group" aria-label="Slideshow controls" id="slide-controls"></div>
+
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" aria-labelledby="about-heading" class="about-section">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="about-heading">About Us</h2>
+          <div class="gold-divider-sm" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Onyx Ventures is a creative and decorative services company based in Nigeria,
+              dedicated to bringing beauty, personality, and professionalism to every project
+              we undertake. From exquisite frame making to bold T-shirt printing, we combine
+              craftsmanship with creativity to deliver results that exceed expectations.
+            </p>
+            <p>
+              Our team of skilled artisans and designers works closely with individuals,
+              businesses, and organisations to understand their unique needs and translate
+              them into stunning visual experiences. We believe that quality and creativity
+              go hand in hand, and that belief drives everything we do.
+            </p>
+            <p>
+              Whether you need a beautifully framed photo, a custom card for a special
+              occasion, vibrant printed T-shirts for your team, or premium cladding for
+              your space — Onyx Ventures is your trusted partner.
+            </p>
+
+            <ul class="about-values">
+              <li><span class="value-icon" aria-hidden="true">✦</span> Quality craftsmanship in every piece</li>
+              <li><span class="value-icon" aria-hidden="true">✦</span> Creative designs tailored to your vision</li>
+              <li><span class="value-icon" aria-hidden="true">✦</span> Reliable delivery and customer satisfaction</li>
+              <li><span class="value-icon" aria-hidden="true">✦</span> Affordable pricing without compromising quality</li>
+            </ul>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-num">5+</div>
+              <div class="stat-label">Years of Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">500+</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">5</div>
+              <div class="stat-label">Core Services</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Satisfaction Rate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section id="services" aria-labelledby="services-heading" class="services-section">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="services-heading" style="color:#fff;">Our Services</h2>
+          <div class="gold-divider-sm" aria-hidden="true"></div>
+          <p class="section-sub" style="color:rgba(255,255,255,0.65);">
+            We provide reliable and professional services to help individuals and businesses
+            achieve their goals with creativity, quality, and excellence.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="card-img-wrap">
+              <img src="images/frame.jpg" alt="Frame Making & Sales" class="card-img" />
+            </div>
+            <div class="card-body">
+              <h3>Frame Making &amp; Sales</h3>
+              <p>We specialise in making and selling high-quality frames for photos, artworks, certificates, mirrors, and wall décor. Our frames are carefully crafted with durable materials and stylish designs to suit your taste. We also offer customised framing services.</p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="card-img-wrap">
+              <img src="images/arts.jpg" alt="Arts & Entertainment" class="card-img" />
+            </div>
+            <div class="card-body">
+              <h3>Arts &amp; Entertainment</h3>
+              <p>We provide creative arts and entertainment services designed to inspire, engage, and bring joy. From unique art pieces and decorative designs to creative events and entertainment solutions, our goal is to add beauty and lasting impressions.</p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="card-img-wrap">
+              <img src="images/card.jpg" alt="Designs of Cards" class="card-img" />
+            </div>
+            <div class="card-body">
+              <h3>Designs of Cards</h3>
+              <p>We create beautifully designed cards for all occasions, including birthdays, weddings, anniversaries, and corporate events. Our custom card designs are tailored to your style and message, ensuring each piece is unique, creative, and memorable.</p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="card-img-wrap">
+              <img src="images/tshirt.jpg" alt="Printing on T-Shirts" class="card-img" />
+            </div>
+            <div class="card-body">
+              <h3>Printing on T-Shirts</h3>
+              <p>We print all kinds of custom graphics and photos on T-shirts — birthday pictures, personalised artwork, team uniforms, and more. High-quality print that lasts, in any style you choose. We look forward to building a long-lasting partnership with you.</p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="card-img-wrap">
+              <img src="images/cladding.jpg" alt="Cladding" class="card-img" />
+            </div>
+            <div class="card-body">
+              <h3>Cladding</h3>
+              <p>Premium cladding solutions that enhance and protect any interior or exterior surface. We work with a range of materials to deliver durable, attractive finishes for residential, commercial, and event spaces.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" aria-labelledby="contact-heading" class="contact-section">
+      <div class="container">
+        <div class="section-title">
+          <h2 id="contact-heading">Contact Us</h2>
+          <div class="gold-divider-sm" aria-hidden="true"></div>
+          <p class="section-sub">Have a project in mind or a question? We'd love to hear from you.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Info column -->
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">📞</div>
+              <div>
+                <div class="info-label">Phone</div>
+                <a href="tel:+2349022537944" class="info-value">09022537944</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">✉️</div>
+              <div>
+                <div class="info-label">Email</div>
+                <a href="mailto:chiboyogbonna044@gmail.com" class="info-value">chiboyogbonna044@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon" aria-hidden="true">📍</div>
+              <div>
+                <div class="info-label">Location</div>
+                <span class="info-value">Nigeria</span>
+              </div>
+            </div>
+
+            <!-- Business hours -->
+            <div class="hours-card">
+              <h4>Business Hours</h4>
+              <div class="hours-row"><span>Monday – Friday</span><span>8:00 AM – 6:00 PM</span></div>
+              <div class="hours-row"><span>Saturday</span><span>9:00 AM – 4:00 PM</span></div>
+              <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+            </div>
+          </div>
+
+          <!-- Form column -->
+          <div class="contact-form-wrap">
+            <!-- Success state -->
+            <div id="form-success" class="form-state" hidden>
+              <div class="state-icon">✅</div>
+              <h3>Message Sent!</h3>
+              <p>Thank you for reaching out. We'll get back to you shortly.</p>
+              <button class="btn-gold" onclick="resetForm()">Send Another</button>
+            </div>
+
+            <!-- Error state -->
+            <div id="form-error" class="form-state" hidden>
+              <div class="state-icon">⚠️</div>
+              <h3>Something went wrong</h3>
+              <p>Your message couldn't be sent. Please reach us directly at
+                <a href="mailto:chiboyogbonna044@gmail.com" style="color:#c9a227;">chiboyogbonna044@gmail.com</a>.
+              </p>
+              <button class="btn-gold" onclick="resetForm()">Try Again</button>
+            </div>
+
+            <!-- The form -->
+            <form id="contact-form" onsubmit="handleSubmit(event)" novalidate aria-label="Contact form">
+              <!-- Live region for screen readers -->
+              <div aria-live="polite" aria-atomic="true" id="form-live" class="sr-only"></div>
+
+              <div class="name-email-grid">
+                <div class="field-group">
+                  <label for="f-name">Full Name <span aria-hidden="true" class="required-star">*</span></label>
+                  <input id="f-name" name="name" type="text" autocomplete="name" placeholder="John Doe" aria-required="true" />
+                  <span id="f-name-error" class="field-error" role="alert" hidden></span>
+                </div>
+                <div class="field-group">
+                  <label for="f-email">Email <span aria-hidden="true" class="required-star">*</span></label>
+                  <input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" aria-required="true" />
+                  <span id="f-email-error" class="field-error" role="alert" hidden></span>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="f-phone">Phone (optional)</label>
+                <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+234 000 000 0000" />
+              </div>
+
+              <div class="field-group">
+                <label for="f-subject">Service Interested In</label>
+                <select id="f-subject" name="subject">
+                  <option value="">Select a service…</option>
+                  <option value="frames">Frame Making &amp; Sales</option>
+                  <option value="arts">Arts &amp; Entertainment</option>
+                  <option value="cards">Card Designs</option>
+                  <option value="tshirts">T-Shirt Printing</option>
+                  <option value="cladding">Cladding</option>
+                  <option value="other">Other / General Enquiry</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label for="f-message">Message <span aria-hidden="true" class="required-star">*</span></label>
+                <textarea id="f-message" name="message" rows="5" placeholder="Tell us about your project…" aria-required="true"></textarea>
+                <span id="f-message-error" class="field-error" role="alert" hidden></span>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn-gold btn-full">Send Message</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.jpg" alt="Onyx Ventures logo" class="footer-logo" />
+        <span class="footer-name">Onyx Ventures</span>
+        <p class="footer-tagline">Creativity. Quality. Excellence.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home"     onclick="smoothScroll(event,'home')">Home</a></li>
+          <li><a href="#about"    onclick="smoothScroll(event,'about')">About</a></li>
+          <li><a href="#services" onclick="smoothScroll(event,'services')">Services</a></li>
+          <li><a href="#contact"  onclick="smoothScroll(event,'contact')">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="tel:+2349022537944">09022537944</a></p>
+        <p><a href="mailto:chiboyogbonna044@gmail.com">chiboyogbonna044@gmail.com</a></p>
+        <p>Nigeria</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> Onyx Ventures. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
